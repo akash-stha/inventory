@@ -1,0 +1,28 @@
+html
+    head
+        title Paradise
+
+    body
+        h2 Welcome to Paradise Nepal
+        span 
+            h2 please register to proceed
+
+        
+        form(action="/auth/register" method="POST")
+            input(type="text",placeholder="Name",name="name")
+            br
+            br
+            input(type="text",placeholder="Email",name="email")
+            br
+            br
+            input(type="text",placeholder="Username",name="username")
+            br
+            br
+            input(type="password",placeholder="Password",name="password")
+            br
+            br
+            button(type="submit",value="register") Register
+
+        span 
+            h2 Already have an account? Login 
+                a(href="/auth/login") here
